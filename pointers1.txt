@@ -1,0 +1,12 @@
+#include<stdio.h>
+int main(){
+    int num;
+    printf("Enter your Number:");
+    scanf("%d",&num);
+    int*ptr=&num;
+    printf("value of num:%d\n",num);
+    printf("Address of num:%p\n",(void*)&num);
+    printf("value of ptr:%p\n",(void*)ptr);
+    printf("Deferenced value:%d\n",*ptr);
+    return 0;
+}
